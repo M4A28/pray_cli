@@ -1,9 +1,9 @@
-package pray;
+package pray
 
 /**
  * Rules for dealing with Fajr and Isha at places with high latitudes
  */
-public enum HighLatitudeRule {
+enum class HighLatitudeRule {
     /**
      * Fajr will never be earlier than the middle of the night, and Isha will never be later than
      * the middle of the night.
@@ -17,7 +17,7 @@ public enum HighLatitudeRule {
     SEVENTH_OF_THE_NIGHT,
 
     /**
-     * Similar to {@link HighLatitudeRule#SEVENTH_OF_THE_NIGHT}, but instead of 1/7th, the faction
+     * Similar to [HighLatitudeRule.SEVENTH_OF_THE_NIGHT], but instead of 1/7th, the faction
      * of the night used is fajrAngle / 60 and ishaAngle/60.
      */
     TWILIGHT_ANGLE

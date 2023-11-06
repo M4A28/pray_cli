@@ -1,49 +1,40 @@
-package pray;
+package pray
 
 /**
  * Adjustment value for prayer times, in minutes
  * These values are added (or subtracted) from the prayer time that is calculated before
  * returning the result times.
  */
-public class PrayerAdjustments {
-
+class PrayerAdjustments
+/**
+ * Gets a pray.PrayerAdjustments object with all offsets set to 0
+ */
+(
     /**
      * Fajr offset in minutes
      */
-    public int fajr;
-
+    var fajr: Int = 0,
     /**
      * Sunrise offset in minutes
      */
-    public int sunrise;
-
+    var sunrise: Int = 0,
     /**
      * Dhuhr offset in minutes
      */
-    public int dhuhr;
-
+    var dhuhr: Int = 0,
     /**
      * Asr offset in minutes
      */
-    public int asr;
-
+    var asr: Int = 0,
     /**
      * Maghrib offset in minutes
      */
-    public int maghrib;
-
+    var maghrib: Int = 0,
     /**
      * Isha offset in minutes
      */
-    public int isha;
-
-    /**
-     * Gets a pray.PrayerAdjustments object with all offsets set to 0
-     */
-    public PrayerAdjustments() {
-        this(0, 0, 0, 0, 0, 0);
-    }
-
+    var isha: Int = 0
+) {
     /**
      * Gets a pray.PrayerAdjustments object to offset prayer times
      *
@@ -54,12 +45,4 @@ public class PrayerAdjustments {
      * @param maghrib offset from maghrib in minutes
      * @param isha    offset from isha in minutes
      */
-    public PrayerAdjustments(int fajr, int sunrise, int dhuhr, int asr, int maghrib, int isha) {
-        this.fajr = fajr;
-        this.sunrise = sunrise;
-        this.dhuhr = dhuhr;
-        this.asr = asr;
-        this.maghrib = maghrib;
-        this.isha = isha;
-    }
 }

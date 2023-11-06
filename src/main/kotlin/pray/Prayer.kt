@@ -1,11 +1,11 @@
-package pray;
+package pray
 
-public enum Prayer {
+enum class Prayer {
     NONE,
     FAJR,
     SUNRISE,
     DHUHR,
     ASR,
     MAGHRIB,
-    ISHA,
+    ISHA
 }

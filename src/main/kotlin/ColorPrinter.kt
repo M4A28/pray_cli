@@ -1,3 +1,4 @@
+
 private const val ANSI_RESET = "\u001B[0m"
 const val ANSI_BLACK = "\u001B[30m"
 const val ANSI_RED = "\u001B[31m"
@@ -8,16 +9,7 @@ const val ANSI_PURPLE = "\u001B[35m"
 const val ANSI_CYAN = "\u001B[36m"
 const val ANSI_WHITE = "\u001B[37m"
 
-// work on it
-const val ANSI_BLACK_BOLD = "\u001B[30"
-const val ANSI_RED_BOLD = "\u001B[31"
-const val ANSI_GREEN_BOLD = "\u001B[32"
-const val ANSI_YELLOW_BOLD = "\u001B[33"
-const val ANSI_BLUE_BOLD = "\u001B[24m"
-const val ANSI_PURPLE_BOLD = "\u001B[35"
-const val ANSI_CYAN_BOLD = "\u001B[36"
-const val ANSI_WHITE_BOLD = "\u001B[37"
-
+const val ANSI_BAK_YELLOW = "\u001B[43m"
 
 
 fun println(color: String, text: String) {
